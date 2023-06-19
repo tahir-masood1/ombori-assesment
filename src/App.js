@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
 import './App.css';
+import Dashboard from './Components/Dashboard';
+import CONSTANTS_DASHBOARD from './Helpers/Contants';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {CONSTANTS_DASHBOARD.USERS_TXT}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <Dashboard />
     </div>
   );
 }
