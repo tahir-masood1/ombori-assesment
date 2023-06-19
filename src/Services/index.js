@@ -70,7 +70,7 @@ function filterResponseOrError(url, options, method) {
       resolve(response && response.status);
     }
   }).catch((e) => {
-    console.log('err :', e.code);
+    // console.log('err :', e.code);
     if (e.code === 'TimeoutError') {
       console.log('Session expired, try again');
       // dispatch(getCredentials(localStorage.getItem('authToken')))

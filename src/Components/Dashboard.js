@@ -72,13 +72,6 @@ function Dashboard() {
       {users?.length > 0
           && users.map((listItem) => (
             <div className="card" key={listItem.id}>
-              {/* <Suspense
-            fallback={
-              <img src={imageFile} alt="Avatar" style={{ width: "50%" }} />
-            }
-          >
-            <ImageComponent src={listItem.download_url} />
-          </Suspense> */}
               <div className="container">
                 <img src={listItem.avatar} alt="Avatar" className="avatar-img" />
 
