@@ -70,13 +70,13 @@ function Dashboard() {
     <div className="content">
       {loading && pageNo === 1 && <img src={loadingImage} alt="loading" className="loading" />}
       {users?.length > 0
-          && users.map((listItem) => (
-            <div className="card" key={listItem.id}>
+          && users.map((user) => (
+            <div className="card" key={user.id}>
               <div className="container">
-                <img src={listItem.avatar} alt="Avatar" className="avatar-img" />
+                <img src={user.avatar} alt="Avatar" className="avatar-img" />
 
                 <h4 className="name-tag">
-                  <b>{`${listItem.first_name} ${listItem.last_name}`}</b>
+                  <b>{`${user.first_name} ${user.last_name}`}</b>
                 </h4>
               </div>
             </div>
