@@ -1,74 +1,18 @@
-<<<<<<< HEAD
-# omburi-assesment
-=======
-# Getting Started with Create React App
+Dear Team, I tried to cover the assesment requirements as provided here: https://github.com/ombori/fullstack-code-test-ts.
+I would like to give a detailed walkthrough of how I build this solution.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* I have bootstrapped this application with Create React APP. It provided me with built-in setup of running, testing, build processing and scaffolding of the complete application.
+* I used to follow this directory structure:
+ ![directory_structure](https://github.com/tahir-masood1/omburi-assesment/assets/99633903/9a58cb9e-751e-421b-8a4a-702b8568f430)
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 29fc10cbcdb38f68b38141593bcc2ba0b12f35dd
+This way I got complete segregation of static elements (Assets for Images, Helpers for static textual constants), Services for all network communications, Components for all screens or deatures inside the application. I tries to separately define the css for each component, placed inside the folder against each component. This way I remains aware of specific locations of where to find one csuch components' css.
+    * same component folder can have the test file against each component
+* I have applied eslint with prettier as formatter for this application. These are my main go-to tools regarding linting and formatter for the any React FE application. I have alse fixed all the lint errors in the application. Usually I used to bind the successful run of eslint as a required process before any build is performed.
+* I have used toast messaging to show any notification like when we have no more users to show in the scrolling. 
+* I have tried to follow the design images to replicate in a responsive layout. Although web design was not provided, but I have tried to figure it out using mobile design provided.
+* I have tried to animate through the provided loading image but it was not providing the required results. So I have trimmed it in .gif image and used it in the application. Proof of my attempts regarding animation are available in the dashboard.css file which can be reviewed as well.  
+ 
+**Steps to run this app**
+* Clone or checkout code from repo
+* run command >  **npm install**
+* run command > **npm start**
